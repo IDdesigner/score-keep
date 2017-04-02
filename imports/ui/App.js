@@ -9,8 +9,10 @@ export default class App extends React.Component {
         return (
             <div>
                 <TitleBar title={title} subtitle={'by Rye Crowen'}/>
-                <PlayerList players={players}/>
-                <AddPlayer/>
+                <div className="wrapper">
+                    <PlayerList players={players}/>
+                    <AddPlayer/>
+                </div>
             </div>
         );
     }
